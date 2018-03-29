@@ -22,7 +22,7 @@ public class ChatServer implements TCPListener {
     private ChatServer() {
         System.out.println("Server running");
 
-        try (ServerSocket serverSocket = new ServerSocket(8289)) {
+        try (ServerSocket serverSocket = new ServerSocket(6663)) {
             while (true) {
 
                 new TCPConnect(this, serverSocket.accept());
